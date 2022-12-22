@@ -100,7 +100,7 @@ case(state)
 	DATA7: 		next_state = LAST;
 	IDLE:  		next_state = tx_sig ? START : IDLE;
 	START: 		next_state = DATA0;
-  LAST:  		next_state = tx_sig ? START : IDLE;
+  	LAST:  		next_state = tx_sig ? START : IDLE;
 
 endcase
 
